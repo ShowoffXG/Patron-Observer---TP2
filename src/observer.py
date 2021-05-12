@@ -9,4 +9,4 @@ class Observer(IObserver):      #Clase observer, encargada de visualizar cambios
         return id(self)
 
     def notify(self, observable, *args):        #Metodo para, en base al sujeto observado, mostrar las notificaciones mandadas
-        print(f"Observer id: {id(self)} recibe {args}")
+        print(f"Observer id: {self.index()} recibe {args}")
