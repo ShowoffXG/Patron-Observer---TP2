@@ -1,9 +1,9 @@
 from abc import ABCMeta, abstractmethod
 
 class IObserver(metaclass=ABCMeta):     #Clase abstracta
-    "A method for the Observer to implement"
+    "Interfaz para que el Observer implemente"
+
     @staticmethod
     @abstractmethod
-
     def notify(observable, *args):      #Metodo abstracto
-        "Receive notifications"
+        "Recibe notificaciones"
